@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/Val-istar-Guo/nestjs-template/compare/v1.1.1...v1.2.0) (2021-02-24)
+
+
+### Features
+
+* upgrade is-ci to 3.0.0 ([2f75a36](https://github.com/Val-istar-Guo/nestjs-template/commit/2f75a3631f7dbb140750bd385d4caa7a24f35433))
+
 ### [1.1.1](https://github.com/Val-istar-Guo/nestjs-template/compare/v1.1.0...v1.1.1) (2021-02-24)
 
 
