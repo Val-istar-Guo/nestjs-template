@@ -17,8 +17,8 @@
     "release": "standard-version --no-verify",
     "release:alpha": "standard-version --prerelease alpha",
     "release:first": "standard-version --first-release",
-    "prepublishOnly": "npm test && npm run build",
-    "postpublish": "git push",
+    "prepublishOnly": "npm test && npm run build && pinst --disable",
+    "postpublish": "pinst --enable && git push",
     "prebuild": "npm run clean",
     "build": "ttsc",
     "postbuild": "npm run copyfile",
@@ -26,7 +26,8 @@
     "watch": "NODE_ENV=local node -r source-map-support/register ./build/watch.js",
     "copyfile": "npm run copyfile:js && npm run copyfile:dts",
     "copyfile:js": "copyfiles -e \"@(build|dist)/**/*.js\" **/*.js dist",
-    "copyfile:dts": "copyfiles -e \"@(build|dist)/**/*.d.ts\" **/*.d.ts dist"
+    "copyfile:dts": "copyfiles -e \"@(build|dist)/**/*.d.ts\" **/*.d.ts dist",
+    "postinstall": "is-ci || husky install"
   },
   "dependencies": {
     "@nestjs/common": "^7.5.1",
@@ -36,8 +37,8 @@
     "@nestjs/typeorm": "^7.1.4",
     "@types/node": "^14.14.7",
     "@types/ramda": "^0.27.32",
-    "class-transformer": "^0.3.1",
-    "class-validator": "^0.12.0-rc.0",
+    "class-transformer": "^0.4.0",
+    "class-validator": "^0.13.1",
     "morgan": "^1.10.0",
     "mysql": "^2.18.1",
     "ramda": "^0.27.1",
@@ -45,8 +46,8 @@
     "typeorm": "^0.2.29"
   },
   "devDependencies": {
-    "@commitlint/cli": "^11.0.0",
-    "@commitlint/config-conventional": "^11.0.0",
+    "@commitlint/cli": "^12.0.0",
+    "@commitlint/config-conventional": "^12.0.0",
     "@typescript-eslint/eslint-plugin": "^4.7.0",
     "@typescript-eslint/parser": "^4.7.0",
     "ava": "^3.13.0",
@@ -56,7 +57,10 @@
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.13.0",
     "husky": "^4.3.0",
+    "is-ci": "^2.0.0",
+    "pinst": "^2.1.6",
     "lint-staged": "^10.5.1",
+    "mili": "^3.9.3",
     "nodemon": "^2.0.6",
     "standard-version": "^9.0.0",
     "ts-node": "^9.0.0",
