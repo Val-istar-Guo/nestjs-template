@@ -1,5 +1,5 @@
 export default {
   files: ['tests/**/*.ts'],
   extensions: ['ts'],
-  require: ['tsconfig-paths/register', 'ts-node/register'],
+  require: ['ts-node/register'],
 }
