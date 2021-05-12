@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://www.github.com/Val-istar-Guo/nestjs-template/compare/v2.0.0...v2.1.0) (2021-05-12)
+
+
+### Features
+
+* change ts-node compiler to ttypescript ([9780368](https://www.github.com/Val-istar-Guo/nestjs-template/commit/9780368a8b5a6cc9bed03f3f6396d96171846c6d))
+
 ## [2.0.0](https://www.github.com/Val-istar-Guo/nestjs-template/compare/v1.2.0...v2.0.0) (2021-05-12)
 
 
