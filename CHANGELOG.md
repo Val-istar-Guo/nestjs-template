@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.1](https://www.github.com/Val-istar-Guo/nestjs-template/compare/v2.2.0...v2.2.1) (2021-05-12)
+
+
+### Bug Fixes
+
+* cannot find module lint-staged ([3c09e73](https://www.github.com/Val-istar-Guo/nestjs-template/commit/3c09e73d3ff37a72c59e23ac3535ac704e0d93d8))
+* cannot find module nodemon ([4899c95](https://www.github.com/Val-istar-Guo/nestjs-template/commit/4899c951e037c9888d99dd066185a77f5fdc7395))
+* the config imported not founded ([b32363d](https://www.github.com/Val-istar-Guo/nestjs-template/commit/b32363df5aed60e77a16aa0156de5b58d0e46010))
+
 ## [2.2.0](https://www.github.com/Val-istar-Guo/nestjs-template/compare/v2.1.0...v2.2.0) (2021-05-12)
 
 
