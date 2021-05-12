@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://www.github.com/Val-istar-Guo/nestjs-template/compare/v1.2.0...v2.0.0) (2021-05-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* Node.js 12 LTS is now the minimum required version.
+
+### Features
+
+* auto run `chmod +x` for .husky files ([ce69e93](https://www.github.com/Val-istar-Guo/nestjs-template/commit/ce69e936fe0408a3f6661272da8ba49b2582554c))
+* bump Node.js version requirement to 12 ([49065a0](https://www.github.com/Val-istar-Guo/nestjs-template/commit/49065a051b49b4ce3fdd9b9cb3020c6d75aac17f))
+
 ## [1.2.0](https://github.com/Val-istar-Guo/nestjs-template/compare/v1.1.1...v1.2.0) (2021-02-24)
 
 
