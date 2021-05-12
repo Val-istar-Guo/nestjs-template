@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://www.github.com/Val-istar-Guo/nestjs-template/compare/v2.1.0...v2.2.0) (2021-05-12)
+
+
+### Features
+
+* use @miaooo/pika implement the env util ([5c6519c](https://www.github.com/Val-istar-Guo/nestjs-template/commit/5c6519c503dfd76d30603e4ece3458e82d54f63f))
+
 ## [2.1.0](https://www.github.com/Val-istar-Guo/nestjs-template/compare/v2.0.0...v2.1.0) (2021-05-12)
 
 
