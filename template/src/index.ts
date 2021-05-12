@@ -3,8 +3,8 @@ import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger'
 import { AppModule } from './app-module'
 import { ValidationPipe } from '@nestjs/common'
 import { name, version } from '@root/package.json'
-import * as selfConfig from '@/config/self'
-import '@/config/sotest'
+import * as SELF from '@/config/self'
+import '@/config'
 import morgan from 'morgan'
 
 
@@ -17,7 +17,7 @@ async function bootstrap(): Promise<void> {
     .setTitle(name)
     .setVersion(version)
     .addTag('reporter', 'sotest 报告服务')
-    .addServer(selfConfig.origin)
+    .addServer(SELF.origin)
     .build()
   const document = SwaggerModule.createDocument(app, options)
   const httpAdapter = app.getHttpAdapter()
@@ -25,7 +25,7 @@ async function bootstrap(): Promise<void> {
     res.json(document)
   })
 
-  await app.listen(selfConfig.port, selfConfig.host)
+  await app.listen(SELF.port, SELF.host)
 }
 
 export default bootstrap
