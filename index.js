@@ -39,3 +39,7 @@ exports.rules = [
     ],
   },
 ]
+
+exports.hooks = {
+  rendered: 'chmod +x .husky/commit-msg && chmod +x .husky/pre-commit'
+}
