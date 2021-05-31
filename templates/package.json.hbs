@@ -1,9 +1,5 @@
 {
-  "name": "{{project.name}}",
   "main": "index.js",
-  "engines": {
-    "node": ">=12"
-  },
   "scripts": {
     "clean": "rm -rf ./dist/*",
     "test": "ava",
@@ -12,13 +8,8 @@
     "report": "nyc --reporter=html --reporter=text-summary --skip-full ava",
     "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
     "start": "node dist/index.js",
-    "ci": "git-cz",
-    "ca": "git add -A && git-cz -av",
-    "release": "standard-version --no-verify",
-    "release:alpha": "standard-version --prerelease alpha",
-    "release:first": "standard-version --first-release",
-    "prepublishOnly": "npm test && npm run build && pinst --disable",
-    "postpublish": "pinst --enable && git push",
+    "prepublishOnly": "npm test && npm run build",
+    "postpublish": "git push",
     "prebuild": "npm run clean",
     "build": "ttsc",
     "postbuild": "npm run copyfile",
@@ -26,8 +17,7 @@
     "watch": "NODE_ENV=local node -r source-map-support/register ./build/watch.js",
     "copyfile": "npm run copyfile:js && npm run copyfile:dts",
     "copyfile:js": "copyfiles -e \"@(build|dist)/**/*.js\" **/*.js dist",
-    "copyfile:dts": "copyfiles -e \"@(build|dist)/**/*.d.ts\" **/*.d.ts dist",
-    "postinstall": "is-ci || husky install"
+    "copyfile:dts": "copyfiles -e \"@(build|dist)/**/*.d.ts\" **/*.d.ts dist"
   },
   "dependencies": {
     "@miaooo/pika": "0.0.5",
@@ -47,22 +37,11 @@
     "typeorm": "^0.2.32"
   },
   "devDependencies": {
-    "@commitlint/cli": "^12.0.0",
-    "@commitlint/config-conventional": "^12.0.0",
-    "@typescript-eslint/eslint-plugin": "^4.23.0",
-    "@typescript-eslint/parser": "^4.23.0",
     "ava": "^3.15.0",
     "chalk": "^4.1.1",
-    "commitizen": "^4.2.4",
     "copyfiles": "^2.4.1",
-    "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^7.26.0",
     "husky": "^5.1.1",
-    "is-ci": "^3.0.0",
-    "lint-staged": "^11.0.0",
     "nodemon": "^2.0.7",
-    "pinst": "^2.1.6",
-    "standard-version": "^9.3.0",
     "ts-node": "^9.1.1",
     "ttypescript": "^1.5.12",
     "typescript": "^4.2.4",

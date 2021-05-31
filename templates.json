@@ -1,0 +1,39 @@
+[
+  {
+    "path": [
+      "src/util/env.ts",
+      "src/index.ts"
+    ],
+    "handlers": [
+      "overwrite"
+    ]
+  },
+  {
+    "path": [
+      "src/**",
+      "tests/*(!tsconfig.json)"
+    ],
+    "handlers": [
+      "exist"
+    ]
+  },
+  {
+    "path": [
+      "package.json.hbs",
+      "tsconfig.json.hbs"
+    ],
+    "handlers": [
+      "handlebars",
+      "merge-json"
+    ]
+  },
+  {
+    "path": [
+      ".gitignore.hbs",
+      "README.md.hbs"
+    ],
+    "handlers": [
+      "handlebars"
+    ]
+  }
+]

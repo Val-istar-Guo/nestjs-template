@@ -1,9 +1,2 @@
-mili:
-  version: 3.9.1
-template:
-  repository: 'npm:mili-template'
-  version: 1.4.0
-answers:
-  lint: false
-  standardVersion: true
-  lock: false
+template: npm:@mtpl/template
+version: 2.0.1
