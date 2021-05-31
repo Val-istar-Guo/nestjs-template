@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://www.github.com/mili-project-manager/mtpl-nestjs/compare/v2.2.1...v3.0.0) (2021-05-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* bump mili version requirement to 4
+
+### Code Refactoring
+
+* mili@4 is now the minimum required version ([48b9b74](https://www.github.com/mili-project-manager/mtpl-nestjs/commit/48b9b74b19a892805fb196fd9c8b2dde0f84a05c))
+
 ### [2.2.1](https://www.github.com/Val-istar-Guo/nestjs-template/compare/v2.2.0...v2.2.1) (2021-05-12)
 
 
