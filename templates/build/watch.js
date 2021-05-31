@@ -49,7 +49,7 @@ async function main() {
     env: process.env,
     script: `${cwd}/dist/index.js`,
     ext: 'js json',
-    watch: [`${cwd}/dist`, `${cwd}/apis`],
+    watch: [`${cwd}/dist`],
     delay: 1000,
   })
 

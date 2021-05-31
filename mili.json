@@ -1,0 +1,34 @@
+{
+  "engines": [
+    "^4.5.0"
+  ],
+  "extends": [
+    "npm:@mtpl/base",
+    "npm:@mtpl/code-style",
+    "npm:@mtpl/conventional-commits",
+    {
+      "template": "npm:@mtpl/github",
+      "answers": {
+        "actions": [
+          "codeql-analysis"
+        ]
+      }
+    }
+  ],
+  "loader": [
+    "git",
+    {
+      "name": "markdown-section",
+      "options": {
+        "key": "readme",
+        "filepath": "README.md",
+        "sections": [
+          "title",
+          "description",
+          "usage",
+          "addition"
+        ]
+      }
+    }
+  ]
+}

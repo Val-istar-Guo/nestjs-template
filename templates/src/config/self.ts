@@ -1,5 +1,8 @@
-import { env } from '@/utils/env'
+import { env } from '@/util/env'
 import os from 'os'
+
+
+export { version } from '@root/package.json'
 
 function getIP(): string {
   const ifaces = os.networkInterfaces()
@@ -36,3 +39,13 @@ export const origin = env.switch({
   local: `http://${getIP()}:${port}`,
   default: 'http://sotest-report-dev.dev.paas-dev.sheincorp.cn',
 })
+
+export const title = env.switch({
+  default: "my service"
+})
+
+interface SwaggerTag {
+  name: string
+  description?: string
+}
+export const tags: SwaggerTag[] = []

@@ -1,16 +1,18 @@
 import { Module } from '@nestjs/common'
 import { TypeOrmModule, TypeOrmModuleOptions } from '@nestjs/typeorm'
 import { AdminModule } from './admin/admin.module'
+import { env } from './util/env'
+
 
 const ormConfig: TypeOrmModuleOptions = {
   type: 'mysql',
   host: 'host',
-  port: 8302,
+  port: 3306,
   username: 'username',
   password: 'password',
-  database: 'service_service_com',
+  database: 'database',
   entities: [],
-  synchronize: true,
+  synchronize: !env.is.prod,
 }
 
 @Module({
