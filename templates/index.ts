@@ -1,3 +1,3 @@
 import bootstrap from './src/index'
 
-bootstrap()
+void bootstrap()

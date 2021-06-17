@@ -5,14 +5,16 @@ import { ValidationPipe } from '@nestjs/common'
 import * as SELF from '@/config/self'
 import '@/config'
 import morgan from 'morgan'
+import { enhance } from './enhance'
 
 
 async function bootstrap(): Promise<void> {
   const app = await NestFactory.create(AppModule)
   app.useGlobalPipes(new ValidationPipe())
   app.use(morgan('tiny'))
+  enhance(app)
 
-   const builder = new DocumentBuilder()
+  const builder = new DocumentBuilder()
     .setTitle(SELF.title)
     .setVersion(SELF.version)
     .addServer(SELF.origin)
