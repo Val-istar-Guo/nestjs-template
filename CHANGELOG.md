@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.1.0](https://www.github.com/mili-project-manager/mtpl-nestjs/compare/v3.0.0...v3.1.0) (2021-06-17)
+
+
+### Features
+
+* can add custom app middleware ([1f662d1](https://www.github.com/mili-project-manager/mtpl-nestjs/commit/1f662d17241334a091c991279086ba10f347911d))
+
+
+### Bug Fixes
+
+* wrong render title of readme ([883499f](https://www.github.com/mili-project-manager/mtpl-nestjs/commit/883499f6a4a208afa501c9a91224b83b3243a966))
+
 ## [3.0.0](https://www.github.com/mili-project-manager/mtpl-nestjs/compare/v2.2.1...v3.0.0) (2021-05-31)
 
 
