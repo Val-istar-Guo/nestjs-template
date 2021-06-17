@@ -17,6 +17,7 @@
   ],
   "loader": [
     "git",
+    "npm",
     {
       "name": "markdown-section",
       "options": {
