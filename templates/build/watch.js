@@ -12,7 +12,7 @@ function watch() {
   const configPath = ts.findConfigFile(
     './',
     ts.sys.fileExists,
-    'tsconfig.json'
+    'tsconfig.json',
   )
 
   if (!configPath) {
@@ -27,7 +27,7 @@ function watch() {
     ts.sys,
     createProgram,
     reportDiagnostic,
-    reportWatchStatusChanged
+    reportWatchStatusChanged,
   )
 
   return ts.createWatchProgram(host)
